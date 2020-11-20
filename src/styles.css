@@ -7,14 +7,16 @@ body {
 .header {
     display: flex;
     padding-top: 10px;
+
     height: 50px;
+
     background-color: white;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .header-icon img, .header-search-bar img {
-  height: 50px;
+  height: 40px;
+  /* width: 100%; */
 }
 
 .content {
@@ -24,6 +26,7 @@ body {
   padding-top: 20px;
   padding-left: 80px;
   padding-right: 80px;
+  padding-bottom: 20px;
 }
 
 .content span {
@@ -73,4 +76,182 @@ body {
   font-size: 20px;
 
   padding: 10px;
+}
+
+.card-overlay a {
+  text-decoration: none;
+  color: white;
+}
+
+
+/* Content columns */
+.content-column-parent {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.post-feed {
+  border-radius: 10px;
+
+  height: 600px;
+  width: 65%;
+}
+
+.side-bar {
+  background-color: black;
+  border-radius: 10px;
+
+  height: 400px;
+  width: 30%;
+}
+
+/* Feed CSS */
+.feed-menu-bar {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: flex-start;
+  align-content: space-around;
+
+  height: 80px;
+  border-radius: 10px;
+
+  background-color: white;
+}
+
+.feed-menu-bar button {
+  height: 40px;
+  min-width: 90px;
+
+  padding: 20px;
+  margin: 10px;
+
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 500;
+
+  cursor: pointer;
+  color: #0077D6;
+  outline: none;
+
+  border: none;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-card {
+  background-color: white;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 20px;
+  padding-bottom: 1px;
+}
+
+.post-card:hover {
+  border: 1px solid grey;
+}
+
+.likes-bar {
+  background-color: #EFEFED;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+
+  width: 70px;
+}
+
+.likes-bar span {
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.likes-bar button {
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight: bold;
+
+  padding: 10px;
+}
+
+.post-card-title-parent {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 10px;
+}
+
+.post-card-info {
+}
+
+.post-card-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  color: black;
+
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.post-card-info span {
+  color: #545452;
+
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.post-card-title-parent img {
+  align-self: center;
+  width: 70%;
+}
+
+.post-card-title-parent a {
+  text-decoration: none;
+  cursor: pointer;
+
+  font-size: 15px;
+  font-family: sans-serif;
+
+  color: #0077D6;
+  outline: none;
+}
+
+.post-card-title-parent a:hover {
+  text-decoration: underline;
+}
+
+#userinfo {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: grey;
+  font-weight: lighter;
+}
+
+#userinfo:hover, #forum-title:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
